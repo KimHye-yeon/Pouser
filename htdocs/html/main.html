@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name = "viewport" content = "width=device-width" charset="utf-8">
+        <link rel="stylesheet" href="/css/style.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.js"></script>
+        <script src="/JavaScript/jquery.fullpage.js"></script>
+        <script type="text/javascript" src="/JavaScript/script.js"></script>
+        <title>GSM 벌점관리시스템</title>
+    </head>
+    <body>
+        <div id="fullpage">
+            <section>
+                <p>벌점
+                    랭킹순
+                </p>
+                <img src="/img/ranking.png" class = "relative">
+                <button onclick="goPage('/php/ranking.php')" onmouseover="change1(this)" onmouseout="change2(this)">바로 확인하기 →
+                </button>
+            </section>
+            <section>
+                <p id = "section2p">기숙사 생활규칙</p>
+                <ul>
+                    <li>광주소프트웨어 마이스터고등학교</li>
+                    <li>창의력·융합력을 갖춘</li>
+                    <li>글로벌 소프트웨어 마이스터 육성 </li>
+                    <li>스스로 삶의 힘을 키우고</li>
+                    <li>상생의 정신을 함양하는 학교</li>
+                </ul>
+                <button class="trigger_popup_fricc" onmouseover="change1(this)" onmouseout="change2(this)" onclick="goPage('/html/page2.php')">확인하기</button>
+                <img src = "/img/rule.png">
+            </section>
+            <section>
+                <p>개별점수</p>
+                <p>확인하기</p>
+                <button onclick="goPage('/php/man.php')" onmouseover="change1(this)" onmouseout="change2(this)">바로 확인하기 →
+                </button>
+                <img src="/img/lookup_512.png" class = "relative">
+            </section>
+        </div>  
+        <script type="text/JavaScript">
+            FastClick.attach(document.body);
+            $('#fullpage').fullpage();
+        </script>
+    </body>
+</html>
